@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Music App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Music App</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#" id="home">Home</a></li>
+      <li><a href="#" id="songs">Songs</a></li>
+      <li><a href="#" id="playlists">Playlists</a></li>
+      <li><a href="#" id="about">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Popular Songs</h2>
+    <ul id="songs-list">
+      <li class="song">
+        <img src="song1.jpg" alt="Song 1">
+        <h3>Song 1</h3>
+        <p>Artist 1</p>
+        <button class="play-button">Play</button>
+      </li>
+      <li class="song">
+        <img src="song2.jpg" alt="Song 2">
+        <h3>Song 2</h3>
+        <p>Artist 2</p>
+        <button class="play-button">Play</button>
+      </li>
+      <!-- Add more songs as needed -->
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Music App. All rights reserved.</p>
+  </footer>
+  <script src="index.js"></script>
+  <script>
+    // JavaScript functionality for navigation bar
+    document.getElementById('home').addEventListener('click', function() {
+      // Logic for handling Home button click
+      alert('You clicked on Home');
+    });
+
+    document.getElementById('songs').addEventListener('click', function() {
+      // Logic for handling Songs button click
+      alert('You clicked on Songs');
+    });
+
+    document.getElementById('playlists').addEventListener('click', function() {
+      // Logic for handling Playlists button click
+      alert('You clicked on Playlists');
+    });
+
+    document.getElementById('about').addEventListener('click', function() {
+      // Logic for handling About button click
+      alert('You clicked on About');
+    });
+  </script>
+</body>
+</html>
